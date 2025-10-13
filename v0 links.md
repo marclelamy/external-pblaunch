@@ -1,0 +1,2 @@
+- Brilliance: https://v0.app/chat/brillance-saa-s-landing-page-ZssDKUOw6U2
+- Swiss: https://v0.app/chat/swiss-design-v3GkliGS64Y
