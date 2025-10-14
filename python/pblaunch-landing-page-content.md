@@ -153,7 +153,7 @@ Trying to figure out editing, trends, and algorithms while running your business
 - **Turn followers into customers** - Content that drives sales, not just likes
 - **Consistent growth** - 15-30 professional shorts posted every month
 
-## 10X Your Reach in 6 Months
+## 100X Your Reach in 6 Months
 Our proven system took clients from 700 to 450K followers. Your content gets seen by your ideal customers, not just random scrollers.
 
 ## Save 16+ Hours Every Week

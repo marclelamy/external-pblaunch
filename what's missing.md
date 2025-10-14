@@ -2,3 +2,7 @@
 - sense of urgency 
 - CTA is too generic 
 - Green brigh is specific color. Okay to use but lightly
+
+
+
+

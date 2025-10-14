@@ -21,6 +21,25 @@ export default function Home() {
                             <div>
                                 <div className="flex items-center gap-3 mb-2">
                                     <Sparkles className="w-6 h-6 text-[#ff6b9d]" />
+                                    <h2 className="font-bold text-2xl tracking-tight">SWISS DESIGN</h2>
+                                </div>
+                                <p className="text-muted-foreground">
+                                    Clean, simple, and elegant design with a modern look. Perfect for professional and corporate brands.
+                                </p>
+                            </div>
+                        </div>
+                        <Link href="/swiss-design">
+                            <Button className="bg-gradient-to-r from-[#c4ff00] via-[#ff6b9d] to-[#ff8c42] text-white hover:opacity-90 font-bold uppercase tracking-wider w-full">
+                                View Swiss Style
+                            </Button>
+                        </Link>
+                    </div>
+
+                    <div className="bg-card border-2 border-border p-8 hover:border-[#c4ff00] transition-colors">
+                        <div className="flex items-start justify-between mb-4">
+                            <div>
+                                <div className="flex items-center gap-3 mb-2">
+                                    <Sparkles className="w-6 h-6 text-[#ff6b9d]" />
                                     <h2 className="font-bold text-2xl tracking-tight">CREATOR ECONOMY</h2>
                                 </div>
                                 <p className="text-muted-foreground">
@@ -88,6 +107,25 @@ export default function Home() {
                         <Link href="/bold-light">
                             <Button className="bg-[#c4ff00] text-black hover:bg-[#c4ff00]/90 font-bold uppercase tracking-wider w-full">
                                 View Light Mode
+                            </Button>
+                        </Link>
+                    </div>
+
+                    <div className="bg-card border-2 border-border p-8 hover:border-[#c4ff00] transition-colors">
+                        <div className="flex items-start justify-between mb-4">
+                            <div>
+                                <div className="flex items-center gap-3 mb-2">
+                                    <Palette className="w-6 h-6 text-[#c4ff00]" />
+                                    <h2 className="font-bold text-2xl tracking-tight">MAGAZINE</h2>
+                                </div>
+                                <p className="text-muted-foreground">
+                                    Refined editorial design with soft colors and elegant typography. Perfect for sophisticated brands.
+                                </p>
+                            </div>
+                        </div>
+                        <Link href="/magazine">
+                            <Button className="bg-[#c4ff00] text-black hover:bg-[#c4ff00]/90 font-bold uppercase tracking-wider w-full">
+                                View Magazine Style
                             </Button>
                         </Link>
                     </div>
