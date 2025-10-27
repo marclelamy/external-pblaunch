@@ -49,15 +49,18 @@ Quick reference for design patterns and UI components for each section.
 
 ### 3. Testimonials
 **Pattern:** Card carousel with before/after stats (Swiss Design style)  
-- Layout: On desktop, each testimonial card is a split layout — **image/photo/square is on the left**, and all other info is on the right. On mobile, **image is stacked on top**, and the rest of the info is below.
+- Layout: On desktop, each testimonial card is a split layout — **3-image grid is on the left**, and all other info is on the right. On mobile, **images are stacked on top**, and the rest of the info is below.
+- **3-Image Grid:** Displays three stacked images vertically:
+    1. **Before** profile screenshot (Instagram stats before working with PBL)
+    2. **After** profile screenshot (Instagram stats after working with PBL)
+    3. **Quote/Testimonial** screenshot (actual message from client)
 - Quote is the main focus: **Make the quote the largest text on the card**, with all other details (stats, name, handle, etc.) smaller and below the quote.
 - Carousel design:  
     - Use the same carousel as the Swiss Design page, with visible left/right arrows for navigation.  
-    - Carousel auto-advances every 5 seconds, but **pauses auto-advance on hover**.  
+    - Manual navigation with left/right arrows.  
 - Each card includes:  
-    - Prominent **quote** (largest font).
-    - Handle (e.g. @username), name/title.
-    - Stats: Display a row showing **"Before → After"** for each key metric, using arrows (e.g. `700 → 936K`).  
+    - Left: 3-image grid (before, after, quote screenshots)
+    - Right: Prominent **quote** (largest font), handle (e.g. @username), name/title, and stats displayed as **"Before → After"** for each key metric, using arrows (e.g. `700 → 936K`).  
     - Use accent color (`#c4ff00`) to highlight growth/"after" numbers.
 - Example format:
     - **Before:** Posts: 21 | Followers: 34 | Following: 54  
@@ -66,7 +69,41 @@ Quick reference for design patterns and UI components for each section.
 - Section also has:  
     - Left/right navigation arrows (see Swiss Design, `page.tsx`).  
     - Dots navigation below the cards.
-- Ensures **full responsiveness** for all layouts (image left/info right on desktop, image top/info below on mobile).
+- Ensures **full responsiveness** for all layouts (images left/info right on desktop, images top/info below on mobile).
+- **Image mappings:** Reference `landing-page-screenshots.md` for all testimonial image paths.
+
+### 3a. Before/After Results Marquee
+**Pattern:** Horizontal auto-scrolling marquee with before/after image cards
+- Displays anonymous client growth results
+- Each card contains:
+  - "Before" label + before profile screenshot
+  - Down arrow (↓) in accent color `#c4ff00`
+  - "After" label + after profile screenshot
+- Card styling: White background, 2px black border, compact width (256px)
+- Marquee behavior:
+  - Auto-scrolls horizontally left-to-right continuously
+  - Infinite loop (duplicates content set twice for seamless loop)
+  - 60s animation duration
+  - Pauses on hover
+- Layout: Full-width section with overflow hidden
+- Displays 24 before/after pairs from `public/images/all-images/before-after/`
+- **Image mappings:** Reference `landing-page-screenshots.md` lines 17-89 for all image paths
+
+### 3b. Client Leads Marquee
+**Pattern:** Horizontal auto-scrolling marquee with text quote cards
+- Displays client testimonial quotes (text only, no names)
+- Each card contains:
+  - Italicized quote text with quotation marks
+  - Clean, simple card design
+- Card styling: White background, 2px black border, medium width (320px)
+- Marquee behavior:
+  - Auto-scrolls horizontally right-to-left (reverse direction from 3a)
+  - Infinite loop (duplicates content set twice for seamless loop)
+  - 60s animation duration
+  - Pauses on hover
+- Layout: Full-width section with overflow hidden
+- Background: Light grey (`bg-neutral-100`) to alternate with other sections
+- Text extracted from client messages (from `public/testimonials.json`)
 
 ### 4. Pain Points
 **Pattern:** 3-column icon cards
@@ -118,6 +155,7 @@ Quick reference for design patterns and UI components for each section.
 
 ## Components Needed
 - Button, Card, Accordion, Carousel
-- TestimonialCard, PricingCard, StepCard, BenefitCard
+- TestimonialCard (with 3-image grid), PricingCard, StepCard, BenefitCard
 - BeforeAfterStats, ComparisonCard, SocialProofBand, Footer
+- BeforeAfterMarquee, ClientLeadsMarquee (auto-scrolling testimonials)
 

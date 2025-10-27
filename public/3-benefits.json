@@ -1,0 +1,59 @@
+{
+    "title": "WHY BUSINESS OWNERS CHOOSE US",
+    "subtitle": "Data-driven results that speak for themselves",
+    "comparison": {
+        "oldWay": {
+            "title": "Old Way: DIY Social Media ❌",
+            "items": [
+                "Spend 20+ hours/week researching trends",
+                "Learn complex editing software",
+                "Get random results with no strategy"
+            ],
+            "result": "Result: Burned out with 100 views per post"
+        },
+        "newWay": {
+            "title": "New Way: Personal Brand Launch ✅",
+            "items": [
+                "We research the top-performing content in your niche",
+                "Professional editing team handles post-production",
+                "Data-driven strategy based on what works"
+            ],
+            "result": "Result: 700 → 450K followers in 6 months, $10K+ monthly revenue"
+        }
+    },
+    "features": [
+        {
+            "id": 1,
+            "title": "1 - Save 16+ Hours Every Week",
+            "metric": "16+",
+            "description": "You film for 4 hours a month. We handle the other 60+ hours of research, scripting, editing, and posting. Run your business instead of becoming a content creator."
+        },
+        {
+            "id": 2,
+            "title": "2 - 10X Your Reach in 6 Months",
+            "metric": "10X",
+            "description": "Our proven system took clients from 700 to 450K followers. Your content gets seen by your ideal customers, not just random scrollers."
+        },
+        {
+            "id": 3,
+            "title": "3 - Turn Followers Into Paying Customers",
+            "metric": "$10K+",
+            "description": "936K followers generated $10K+ monthly revenue for one client. We don't just chase vanity metrics—we create content that drives sales and leads."
+        },
+        {
+            "id": 4,
+            "title": "4 - Done-For-You Content Strategy",
+            "description": "No more guessing what to post. Our data-driven approach studies the top 1% in your niche and replicates what actually works."
+        },
+        {
+            "id": 5,
+            "title": "5 - Professional Quality Without the Learning Curve",
+            "description": "Skip the 6-month learning curve of mastering editing software. Our team delivers scroll-stopping content that looks like you hired a full production crew."
+        },
+        {
+            "id": 6,
+            "title": "6 - Consistent Growth That Compounds",
+            "description": "Post 15-30 shorts per month consistently. The algorithm rewards consistency—something impossible to maintain when you're doing it alone."
+        }
+    ]
+}

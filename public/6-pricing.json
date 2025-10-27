@@ -1,0 +1,91 @@
+{
+  "title": "CHOOSE YOUR GROWTH PLAN",
+  "subtitle": "Data-driven pricing for measurable results",
+  "plans": [
+    {
+      "id": 1,
+      "name": "1 - GROW",
+      "price": "$2,995",
+      "period": "/month",
+      "featured": false,
+      "contentVolume": {
+        "title": "Content Volume",
+        "items": [
+          "15 Shorts/Month",
+          "7 Sales Focused Instagram Stories"
+        ]
+      },
+      "services": {
+        "title": "Services Included",
+        "items": [
+          "Onboarding/Review Calls",
+          "Research",
+          "Scripting",
+          "Editing",
+          "Uploading",
+          "24/7 Weekday Email Support",
+          "Monthly Reports",
+          "✨ Optimize Your Profile Checklist"
+        ]
+      },
+      "cta": "BOOK A CALL"
+    },
+    {
+      "id": 2,
+      "name": "2 - SCALE",
+      "price": "$3,495",
+      "period": "/month",
+      "featured": true,
+      "badge": "Most Popular",
+      "contentVolume": {
+        "title": "Content Volume",
+        "items": [
+          "20 Shorts/Month",
+          "10 Sales Focused Instagram Stories"
+        ]
+      },
+      "services": {
+        "title": "Services Included",
+        "items": [
+          "Onboarding/Review Calls",
+          "Research",
+          "Scripting",
+          "Editing",
+          "Uploading",
+          "24/7 Weekday Email Support",
+          "Monthly Reports",
+          "✨ Optimize Your Profile Checklist"
+        ]
+      },
+      "cta": "BOOK A CALL"
+    },
+    {
+      "id": 3,
+      "name": "3 - DOMINATE",
+      "price": "$4,495",
+      "period": "/month",
+      "featured": false,
+      "contentVolume": {
+        "title": "Content Volume",
+        "items": [
+          "30 Shorts/Month",
+          "15 Sales Focused Instagram Stories"
+        ]
+      },
+      "services": {
+        "title": "Services Included",
+        "items": [
+          "Onboarding/Review Calls",
+          "Research",
+          "Scripting",
+          "Editing",
+          "Uploading",
+          "24/7 Weekday Email Support",
+          "Monthly Reports",
+          "✨ Optimize Your Profile Checklist"
+        ]
+      },
+      "cta": "BOOK A CALL"
+    }
+  ]
+}

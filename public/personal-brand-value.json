@@ -1,0 +1,63 @@
+{
+    "title": "WHY BUILD YOUR PERSONAL BRAND?",
+    "section1": {
+        "heading": "WHAT DO THEY HAVE IN COMMON?",
+        "celebrities": [
+            {
+                "id": 1,
+                "name": "1 - Kylie Jenner",
+                "business": "Kylie Cosmetics",
+                "achievement": "Youngest Billionaire"
+            },
+            {
+                "id": 2,
+                "name": "2 - Rihanna",
+                "business": "Fenty Beauty",
+                "achievement": "$2.8B Valuation"
+            },
+            {
+                "id": 3,
+                "name": "3 - Ryan Reynolds",
+                "business": "Mint Mobile",
+                "achievement": "Sold for $1B"
+            },
+            {
+                "id": 4,
+                "name": "4 - Logan Paul",
+                "business": "Prime",
+                "achievement": "$3.1B Valuation"
+            },
+            {
+                "id": 5,
+                "name": "5 - The Rock",
+                "business": "Teremana Tequila",
+                "achievement": "$3.5B Valuation"
+            }
+        ]
+    },
+    "section2": {
+        "explanation": "All these people built up their personal brands by acting, singing, TV, or social media. When they started businesses, their companies EXPLODED.",
+        "explanation2": "Their personal brand was their marketing. Social media is the best way for your average person to do this without being an actor, singer, or athlete."
+    },
+    "section3": {
+        "heading": "THE NUMBERS DON'T LIE",
+        "statistics": [
+            {
+                "id": 1,
+                "number": "4.26B",
+                "description": "Social media users worldwide"
+            },
+            {
+                "id": 2,
+                "number": "54%",
+                "description": "Use social media to research products"
+            },
+            {
+                "id": 3,
+                "number": "71%",
+                "description": "Purchase decisions made on social media"
+            }
+        ]
+    },
+    "callout": "There is a HUGE opportunity here. If you don't take it, your competitors will - and they'll take all your customers with them."
+}

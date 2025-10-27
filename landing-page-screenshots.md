@@ -1,0 +1,89 @@
+- Testimonials screenshots 
+    - theyounetworkhq
+        - before: public/images/all-images/atestimonials/theyounetworkhq/image-021.png
+        - after: public/images/all-images/atestimonials/theyounetworkhq/image-079.png
+        - quote: public/images/all-images/atestimonials/theyounetworkhq/image-064.png
+    - the_bold_break
+        - before: public/images/all-images/atestimonials/the_bold_break/image-082.png
+        - after: public/images/all-images/atestimonials/the_bold_break/image-081.png
+        - quote: public/images/all-images/atestimonials/the_bold_break/image-080.png
+    - iam_susanaalba
+        - before: public/images/all-images/atestimonials/iam_susanaalba/image-073.png
+        - after: public/images/all-images/atestimonials/iam_susanaalba/image-074.png
+        - quote: public/images/all-images/atestimonials/iam_susanaalba/image-010.png
+
+
+
+- before and after screenshots
+    - 1
+        - before: public/images/all-images/before-after/image-017.png
+        - after: public/images/all-images/before-after/image-018.png
+    - 2
+        - before: public/images/all-images/before-after/image-019.png
+        - after: public/images/all-images/before-after/image-020.png
+    - 3
+        - before: public/images/all-images/before-after/image-022.png
+        - after: public/images/all-images/before-after/image-023.png
+    - 4
+        - before: public/images/all-images/before-after/image-025.png
+        - after: public/images/all-images/before-after/image-026.png
+    - 5
+        - before: public/images/all-images/before-after/image-027.png
+        - after: public/images/all-images/before-after/image-028.png
+    - 6
+        - before: public/images/all-images/before-after/image-029.png
+        - after: public/images/all-images/before-after/image-030.png
+    - 7
+        - before: public/images/all-images/before-after/image-032.png
+        - after: public/images/all-images/before-after/image-033.png
+    - 8
+        - before: public/images/all-images/before-after/image-034.png
+        - after: public/images/all-images/before-after/image-035.png
+    - 9
+        - before: public/images/all-images/before-after/image-036.png
+        - after: public/images/all-images/before-after/image-037.png
+    - 10
+        - before: public/images/all-images/before-after/image-038.png
+        - after: public/images/all-images/before-after/image-039.png
+    - 11
+        - before: public/images/all-images/before-after/image-040.png
+        - after: public/images/all-images/before-after/image-041.png
+    - 12
+        - before: public/images/all-images/before-after/image-042.png
+        - after: public/images/all-images/before-after/image-043.png
+    - 13
+        - before: public/images/all-images/before-after/image-044.png
+        - after: public/images/all-images/before-after/image-045.png
+    - 14
+        - before: public/images/all-images/before-after/image-046.png
+        - after: public/images/all-images/before-after/image-047.png
+    - 15
+        - before: public/images/all-images/before-after/image-048.png
+        - after: public/images/all-images/before-after/image-049.png
+    - 16
+        - before: public/images/all-images/before-after/image-051.png
+        - after: public/images/all-images/before-after/image-052.png
+    - 17
+        - before: public/images/all-images/before-after/image-053.png
+        - after: public/images/all-images/before-after/image-054.png
+    - 18
+        - before: public/images/all-images/before-after/image-055.png
+        - after: public/images/all-images/before-after/image-056.png
+    - 19
+        - before: public/images/all-images/before-after/image-057.png
+        - after: public/images/all-images/before-after/image-058.png
+    - 20
+        - before: public/images/all-images/before-after/image-059.png
+        - after: public/images/all-images/before-after/image-060.png
+    - 21
+        - before: public/images/all-images/before-after/image-061.png
+        - after: public/images/all-images/before-after/image-062.png
+    - 22
+        - before: public/images/all-images/before-after/image-063.png
+        - after: public/images/all-images/before-after/image-064.png
+    - 23
+        - before: public/images/all-images/before-after/image-065.png
+        - after: public/images/all-images/before-after/image-066.png
+    - 24
+        - before: public/images/all-images/before-after/image-067.png
+        - after: public/images/all-images/before-after/image-068.png

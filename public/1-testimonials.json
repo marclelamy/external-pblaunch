@@ -1,0 +1,117 @@
+{
+    "testimonials": [
+        {
+            "id": 1,
+            "number": "01",
+            "name": "1 - Karl Morningstar",
+            "handle": "@theyounetworkhq",
+            "title": "CEO | Franchise Consultant",
+            "metric": "1,238%",
+            "metricLabel": "Follower Growth",
+            "before": {
+                "posts": "21",
+                "followers": "34",
+                "engagement": "12%"
+            },
+            "after": {
+                "posts": "376",
+                "followers": "421K",
+                "engagement": "18%"
+            },
+            "beforeArray": [
+                "Posts: 21",
+                "Followers: 34",
+                "Following: 54"
+            ],
+            "afterArray": [
+                "Posts: 376",
+                "Followers: 421K",
+                "Following: 123"
+            ],
+            "description": "Karl Morningstar | CEO | Franchise Consultant",
+            "quote": "I am on the plane flying back, and so many leads are coming in, I can't finish any of my other work. I am going to have to hire an admin or AI the shit out of this! Thanks!",
+            "beforeFollowers": "34",
+            "afterFollowers": "421K",
+            "images": {
+                "before": "/images/all-images/atestimonials/theyounetworkhq/image-021.png",
+                "after": "/images/all-images/atestimonials/theyounetworkhq/image-079.jpeg",
+                "quoteImg": "/images/all-images/atestimonials/theyounetworkhq/image-064.jpeg"
+            }
+        },
+        {
+            "id": 2,
+            "number": "02",
+            "name": "2 - Susana Briscoe Alba",
+            "handle": "@iam_susanaalba",
+            "title": "Leadership & Career Coach",
+            "metric": "133,614%",
+            "metricLabel": "Follower Growth",
+            "before": {
+                "posts": "315",
+                "followers": "700",
+                "engagement": "8%"
+            },
+            "after": {
+                "posts": "1,428",
+                "followers": "936K",
+                "engagement": "22%"
+            },
+            "beforeArray": [
+                "Posts: 315",
+                "Followers: 700",
+                "Following: 426"
+            ],
+            "afterArray": [
+                "Posts: 1,428",
+                "Followers: 936K",
+                "Following: 827"
+            ],
+            "description": "Susana | Leadership & Career Coach | Faith Based Life Coach\nHelping Women of Color Secure 6-Figure Roles & Lead with Authority",
+            "quote": "The support from Personal Brand Launch has significantly impacted my business, enabling us to generate over $10K in monthly revenue. Partnering with them has proven to be the best business decision I've ever made.",
+            "beforeFollowers": "700",
+            "afterFollowers": "936K",
+            "images": {
+                "before": "/images/all-images/atestimonials/iam_susanaalba/image-073.png",
+                "after": "/images/all-images/atestimonials/iam_susanaalba/image-074.png",
+                "quoteImg": "/images/all-images/atestimonials/iam_susanaalba/image-010.jpeg"
+            }
+        },
+        {
+            "id": 3,
+            "number": "03",
+            "name": "3 - Gabby",
+            "handle": "@_boldbreak",
+            "title": "Volleyball & Resilience Coach",
+            "metric": "1,059%",
+            "metricLabel": "Follower Growth",
+            "before": {
+                "posts": "0",
+                "followers": "2,607",
+                "engagement": "5%"
+            },
+            "after": {
+                "posts": "599",
+                "followers": "30.2K",
+                "engagement": "15%"
+            },
+            "beforeArray": [
+                "Followers: 2,607",
+                "Following: 174"
+            ],
+            "afterArray": [
+                "Posts: 599",
+                "Followers: 30.2K",
+                "Following: 434"
+            ],
+            "description": "Gabby | Volleyball & Resilience Coach",
+            "quote": "Yaaaay! I'm so excited. I actually have so many leads in my DM's that I have to hustle to create a paid plan in my app for mental performance coaching to capitalize on the opportunity. I also had someone reach out for a speaking engagement! Crazy!",
+            "beforeFollowers": "2,607",
+            "afterFollowers": "30.2K",
+            "images": {
+                "before": "/images/all-images/atestimonials/the_bold_break/image-082.jpeg",
+                "after": "/images/all-images/atestimonials/the_bold_break/image-081.jpeg",
+                "quoteImg": "/images/all-images/atestimonials/the_bold_break/image-080.png"
+            }
+        }
+    ]
+}

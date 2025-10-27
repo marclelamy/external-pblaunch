@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import { Home, ChevronLeft, ChevronRight } from "lucide-react"
 import useEmblaCarousel from "embla-carousel-react"
 import { useCallback, useEffect, useState } from "react"
@@ -35,6 +36,11 @@ function TestimonialsCarousel() {
             before: ["Posts: 21", "Followers: 34", "Following: 54"],
             after: ["Posts: 376", "Followers: 421K", "Following: 123"],
             quote: '"I am on the plane flying back, and so many leads are coming in, I can\'t finish any of my other work. I am going to have to hire an admin or AI the shit out of this! Thanks!"',
+            images: {
+                before: "/images/all-images/atestimonials/theyounetworkhq/image-021.png",
+                after: "/images/all-images/atestimonials/theyounetworkhq/image-079.jpeg",
+                quoteImg: "/images/all-images/atestimonials/theyounetworkhq/image-064.jpeg",
+            },
         },
         {
             number: "2",
@@ -43,6 +49,11 @@ function TestimonialsCarousel() {
             before: ["Posts: 315", "Followers: 700", "Following: 426"],
             after: ["Posts: 1,428", "Followers: 936K", "Following: 827"],
             quote: '"The support from Personal Brand Launch has significantly impacted my business, enabling us to generate over $10K in monthly revenue. Their expertise has been crucial in identifying industry trends and crafting content that drives sales. Partnering with them has proven to be the best business decision I\'ve ever made."',
+            images: {
+                before: "/images/all-images/atestimonials/iam_susanaalba/image-073.png",
+                after: "/images/all-images/atestimonials/iam_susanaalba/image-074.png",
+                quoteImg: "/images/all-images/atestimonials/iam_susanaalba/image-010.jpeg",
+            },
         },
         {
             number: "3",
@@ -51,6 +62,11 @@ function TestimonialsCarousel() {
             before: ["Followers: 2,607", "Following: 174"],
             after: ["Posts: 599", "Followers: 30.2K", "Following: 434"],
             quote: '"Yaaaay! I\'m so excited. I actually have so many leads in my DM\'s that I have to hustle to create a paid plan in my app for mental performance coaching to capitalize on the opportunity. I also had someone reach out for a speaking engagement! Crazy!"',
+            images: {
+                before: "/images/all-images/atestimonials/the_bold_break/image-082.jpeg",
+                after: "/images/all-images/atestimonials/the_bold_break/image-081.jpeg",
+                quoteImg: "/images/all-images/atestimonials/the_bold_break/image-080.png",
+            },
         },
     ]
 
@@ -70,9 +86,34 @@ function TestimonialsCarousel() {
                                 <div key={index} className="flex-[0_0_100%] min-w-0 px-4">
                                     <div className="group bg-white p-8 border-2 border-black mx-auto">
                                         <div className="flex flex-col md:flex-row gap-8 items-start">
-                                            {/* Number Square - Top on mobile, Left on desktop */}
-                                            <div className="flex-shrink-0 w-full md:w-48 h-48 bg-neutral-100 overflow-hidden flex items-center justify-center group-hover:bg-[#c4ff00] transition-colors duration-300">
-                                                <span className="text-black text-6xl font-bold">{testimonial.number}</span>
+                                            {/* 3-Image Grid - Top on mobile, Left on desktop */}
+                                            <div className="flex-shrink-0 w-full md:w-64">
+                                                <div className="grid grid-cols-3 gap-2">
+                                                    <div className="col-span-3 aspect-square relative overflow-hidden">
+                                                        <Image
+                                                            src={testimonial.images.before}
+                                                            alt={`${testimonial.name} before`}
+                                                            fill
+                                                            className="object-cover"
+                                                        />
+                                                    </div>
+                                                    <div className="col-span-3 aspect-square relative overflow-hidden">
+                                                        <Image
+                                                            src={testimonial.images.after}
+                                                            alt={`${testimonial.name} after`}
+                                                            fill
+                                                            className="object-cover"
+                                                        />
+                                                    </div>
+                                                    <div className="col-span-3 aspect-square relative overflow-hidden">
+                                                        <Image
+                                                            src={testimonial.images.quoteImg}
+                                                            alt={`${testimonial.name} testimonial`}
+                                                            fill
+                                                            className="object-cover"
+                                                        />
+                                                    </div>
+                                                </div>
                                             </div>
 
                                             {/* Content - Bottom on mobile, Right on desktop */}
@@ -227,6 +268,115 @@ export default function SwissDesign() {
 
             {/* Testimonials Section */}
             <TestimonialsCarousel />
+
+            {/* Before/After Results Marquee Section */}
+            <section className="py-20 px-4 md:px-8 bg-white overflow-hidden">
+                <div className="max-w-[1140px] mx-auto mb-12">
+                    <h2 className="text-5xl font-bold tracking-tighter text-center mb-4">CLIENT RESULTS</h2>
+                    <p className="text-xl text-center">Real growth from real accounts</p>
+                </div>
+                <div className="relative">
+                    <div className="flex gap-6 animate-marquee">
+                        {[...Array(2)].map((_, setIndex) => (
+                            <div key={setIndex} className="flex gap-6 shrink-0">
+                                {[
+                                    { before: "/images/all-images/before-after/image-017.png", after: "/images/all-images/before-after/image-018.png" },
+                                    { before: "/images/all-images/before-after/image-019.png", after: "/images/all-images/before-after/image-020.png" },
+                                    { before: "/images/all-images/before-after/image-022.png", after: "/images/all-images/before-after/image-023.png" },
+                                    { before: "/images/all-images/before-after/image-025.png", after: "/images/all-images/before-after/image-026.png" },
+                                    { before: "/images/all-images/before-after/image-027.png", after: "/images/all-images/before-after/image-028.png" },
+                                    { before: "/images/all-images/before-after/image-029.png", after: "/images/all-images/before-after/image-030.png" },
+                                    { before: "/images/all-images/before-after/image-032.png", after: "/images/all-images/before-after/image-033.png" },
+                                    { before: "/images/all-images/before-after/image-034.png", after: "/images/all-images/before-after/image-035.png" },
+                                    { before: "/images/all-images/before-after/image-036.png", after: "/images/all-images/before-after/image-037.png" },
+                                    { before: "/images/all-images/before-after/image-038.png", after: "/images/all-images/before-after/image-039.png" },
+                                    { before: "/images/all-images/before-after/image-040.png", after: "/images/all-images/before-after/image-041.png" },
+                                    { before: "/images/all-images/before-after/image-042.png", after: "/images/all-images/before-after/image-043.png" },
+                                    { before: "/images/all-images/before-after/image-044.png", after: "/images/all-images/before-after/image-045.png" },
+                                    { before: "/images/all-images/before-after/image-046.png", after: "/images/all-images/before-after/image-047.png" },
+                                    { before: "/images/all-images/before-after/image-048.png", after: "/images/all-images/before-after/image-049.png" },
+                                    { before: "/images/all-images/before-after/image-051.png", after: "/images/all-images/before-after/image-052.png" },
+                                    { before: "/images/all-images/before-after/image-053.png", after: "/images/all-images/before-after/image-054.png" },
+                                    { before: "/images/all-images/before-after/image-055.png", after: "/images/all-images/before-after/image-056.png" },
+                                    { before: "/images/all-images/before-after/image-057.png", after: "/images/all-images/before-after/image-058.png" },
+                                    { before: "/images/all-images/before-after/image-059.png", after: "/images/all-images/before-after/image-060.png" },
+                                    { before: "/images/all-images/before-after/image-061.png", after: "/images/all-images/before-after/image-062.png" },
+                                    { before: "/images/all-images/before-after/image-065.png", after: "/images/all-images/before-after/image-066.png" },
+                                    { before: "/images/all-images/before-after/image-067.png", after: "/images/all-images/before-after/image-068.png" },
+                                ].map((item, idx) => (
+                                    <div key={`${setIndex}-${idx}`} className="shrink-0 bg-white border-2 border-black p-4 w-64">
+                                        <div className="space-y-3">
+                                            <div>
+                                                <p className="text-xs uppercase tracking-widest mb-2 text-neutral-600">Before</p>
+                                                <div className="relative w-full aspect-[4/3] overflow-hidden">
+                                                    <Image
+                                                        src={item.before}
+                                                        alt="Before stats"
+                                                        fill
+                                                        className="object-cover"
+                                                    />
+                                                </div>
+                                            </div>
+                                            <div className="flex justify-center">
+                                                <div className="text-2xl text-[#c4ff00]">↓</div>
+                                            </div>
+                                            <div>
+                                                <p className="text-xs uppercase tracking-widest mb-2 text-neutral-600">After</p>
+                                                <div className="relative w-full aspect-[4/3] overflow-hidden">
+                                                    <Image
+                                                        src={item.after}
+                                                        alt="After stats"
+                                                        fill
+                                                        className="object-cover"
+                                                    />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
+            {/* Client Leads Marquee Section */}
+            <section className="py-20 px-4 md:px-8 bg-neutral-100 overflow-hidden">
+                <div className="max-w-[1140px] mx-auto mb-12">
+                    <h2 className="text-5xl font-bold tracking-tighter text-center mb-4">CLIENT TESTIMONIALS</h2>
+                    <p className="text-xl text-center">What our clients are saying</p>
+                </div>
+                <div className="relative">
+                    <div className="flex gap-6 animate-marquee-reverse">
+                        {[...Array(2)].map((_, setIndex) => (
+                            <div key={setIndex} className="flex gap-6 shrink-0">
+                                {[
+                                    "I need some help. I have been overwhelmed by the number of prospective clients contacting me. This is a good thing, but I did not realize until last night, that 100's of people have asked for assistance through the APP's message request system.",
+                                    "FYI, Last month, I converted two of the leads created through our efforts into $68K in revenue. - Karl",
+                                    "Partially as a result of our work together, last week I received a speaking gig and a celebrity endorsement",
+                                    "All 24 seats of the summit have sold out. Crazy insanity. Totallllly wild. It was released yesterday at 12 noon",
+                                    "Before I started working with PBL, my IG account only had around 120 followers. After working with PBL for 4 months, I now have close to 8500 followers and growing - a 70x growth in followers.",
+                                    "Videos are working! I've had 4 high value clients reach out for massive policies.",
+                                    "That reel that went viral was the third post from PBL and has gained us 65k followers in less than a week. I am so so happy for you :)",
+                                    "Our one post is doing really great! 646k views!! that has never happened!",
+                                    "I have gotten over 7000 new visitors to my website since we started",
+                                    "We've had 193 new leads opt-in for my free offer in the last three weeks alone, and since November 1, 2024, a total of 1,310 leads have signed up!",
+                                    "I was at a franchisor's office with about 30 industry consultants. One of them said, I know you...you are Karl, I follow you! I guess I have finally arrived thanks to PBL team.",
+                                    "Not only is my account consistently growing, but the peace of mind of not having to come up with ideas, edit, and post has been life-changing for my work/life balance.",
+                                    "I am on the plane flying back, and so many leads are coming in, I can't finish any of my other work. I am going to have to hire an admin or AI the shit out of this! Thanks!",
+                                    "I wanted to tell you guys that my business just did 100k in 30 days & I absolutely believe the professional quality of the shorts that PBL is doing contributed to that!",
+                                ].map((quote, idx) => (
+                                    <div key={`${setIndex}-${idx}`} className="shrink-0 bg-white border-2 border-black p-6 w-80">
+                                        <p className="text-lg italic text-neutral-700 leading-relaxed">
+                                            &ldquo;{quote}&rdquo;
+                                        </p>
+                                    </div>
+                                ))}
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
 
             {/* Pain Points Section */}
             <section className="py-20 px-4 md:px-8 bg-white">

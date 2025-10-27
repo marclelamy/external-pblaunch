@@ -1,0 +1,50 @@
+{
+    "title": "OUR PROVEN PROCESS",
+    "subtitle": "Four steps backed by data and optimized for maximum ROI.",
+    "steps": [
+        {
+            "id": 1,
+            "number": "1",
+            "title": "1 - RESEARCH",
+            "description": "We find and study the top creators/best performing content in your niche on social media.",
+            "features": [
+                "Competitor Analysis",
+                "Trend Identification",
+                "Audience Insights"
+            ]
+        },
+        {
+            "id": 2,
+            "number": "2",
+            "title": "2 - SCRIPT",
+            "description": "Using the research and information on you and your business. We script an entire month of short form content.",
+            "features": [
+                "Hook Optimization",
+                "CTA Testing",
+                "SEO Keywords"
+            ]
+        },
+        {
+            "id": 3,
+            "number": "3",
+            "title": "3 - FILM & EDIT",
+            "description": "You film the scripts. We edit the videos.",
+            "features": [
+                "Color Grading",
+                "Captions & Graphics",
+                "Sound Design"
+            ]
+        },
+        {
+            "id": 4,
+            "number": "4",
+            "title": "4 - UPLOAD",
+            "description": "We upload the content on your chosen social media channels (Instagram, TikTok, Facebook, Youtube, Linkedin).",
+            "features": [
+                "Multi-Platform",
+                "Peak Timing",
+                "Performance Tracking"
+            ]
+        }
+    ]
+}

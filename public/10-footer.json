@@ -1,0 +1,21 @@
+{
+    "logo": "PBLAUNCH",
+    "links": [
+        {
+            "id": 1,
+            "label": "Instagram",
+            "url": "#"
+        },
+        {
+            "id": 2,
+            "label": "TikTok",
+            "url": "#"
+        },
+        {
+            "id": 3,
+            "label": "LinkedIn",
+            "url": "#"
+        }
+    ],
+    "copyright": "© 2025 PBLAUNCH"
+}

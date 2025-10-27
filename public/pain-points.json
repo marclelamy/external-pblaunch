@@ -1,0 +1,30 @@
+{
+    "title": "WHY BUSINESS OWNERS STRUGGLE",
+    "subtitle": "The data shows these are the top 3 obstacles to social media success",
+    "painPoints": [
+        {
+            "id": 1,
+            "number": "1",
+            "icon": "Clock",
+            "title": "1 - Time Drain",
+            "description": "Spending 20+ hours a week creating content that gets 100 views",
+            "stat": "Average: 20+ hrs/week wasted"
+        },
+        {
+            "id": 2,
+            "number": "2",
+            "icon": "TrendingDown",
+            "title": "2 - No Strategy",
+            "description": "Posting randomly with no plan, hoping something sticks",
+            "stat": "Result: Inconsistent growth"
+        },
+        {
+            "id": 3,
+            "number": "3",
+            "icon": "BookOpen",
+            "title": "3 - Steep Learning Curve",
+            "description": "Trying to figure out editing, trends, and algorithms while running your business",
+            "stat": "Learning time: 6+ months"
+        }
+    ]
+}

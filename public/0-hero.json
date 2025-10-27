@@ -1,0 +1,30 @@
+{
+    "headline": "BLOW UP YOUR",
+    "headlineHighlight": "SOCIAL MEDIA",
+    "subheadline": "We create viral content for your brand. We research, script, edit, and post viral content for your brand. You just have to film it.",
+    "primaryCta": "Book Your Free Strategy Call",
+    "secondaryCta": "See The Numbers",
+    "badge": "Data-Driven Growth",
+    "statCards": [
+        {
+            "number": "70X",
+            "label": "AVG GROWTH",
+            "detail": "120 → 8,500 followers in 4 months"
+        },
+        {
+            "number": "$100K",
+            "label": "IN 30 DAYS",
+            "detail": "Client revenue generated"
+        },
+        {
+            "number": "500K+",
+            "label": "FOLLOWERS",
+            "detail": "Total generated for clients"
+        },
+        {
+            "number": "$10K+",
+            "label": "MRR",
+            "detail": "Monthly recurring revenue"
+        }
+    ]
+}
