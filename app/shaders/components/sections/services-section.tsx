@@ -1,9 +1,17 @@
 "use client"
 
-import { useReveal } from "@/hooks/use-reveal"
+import { useReveal } from "../../hooks/use-reveal"
+import { useEffect, useState } from "react"
 
-export function ServicesSection() {
+export function PainPointsSection() {
   const { ref, isVisible } = useReveal(0.3)
+  const [painPoints, setPainPoints] = useState<any[]>([])
+
+  useEffect(() => {
+    fetch("/2-pain-points.json")
+      .then(r => r.json())
+      .then(data => setPainPoints(data.painPoints))
+  }, [])
 
   return (
     <section
@@ -16,36 +24,16 @@ export function ServicesSection() {
             isVisible ? "translate-y-0 opacity-100" : "-translate-y-12 opacity-0"
           }`}
         >
-          <h2 className="mb-2 font-sans text-5xl font-light tracking-tight text-foreground md:text-6xl lg:text-7xl">
-            Capabilities
+          <h2 className="mb-2 font-sans text-5xl font-light tracking-tight text-foreground/95 md:text-6xl lg:text-7xl">
+            Why Business Owners
+            <br />
+            <span className="text-[#c4ff00]">Struggle with Social Media</span>
           </h2>
-          <p className="font-mono text-sm text-foreground/60 md:text-base">/ What we bring to the table</p>
         </div>
 
-        <div className="grid gap-8 md:grid-cols-2 md:gap-x-16 md:gap-y-12 lg:gap-x-24">
-          {[
-            {
-              title: "Creative Development",
-              description: "Pushing the boundaries of what's possible on the web",
-              direction: "top",
-            },
-            {
-              title: "Visual Design",
-              description: "Crafting memorable experiences through thoughtful aesthetics",
-              direction: "right",
-            },
-            {
-              title: "Motion & Animation",
-              description: "Bringing interfaces to life with purposeful movement",
-              direction: "left",
-            },
-            {
-              title: "Technical Strategy",
-              description: "Building scalable solutions that perform beautifully",
-              direction: "bottom",
-            },
-          ].map((service, i) => (
-            <ServiceCard key={i} service={service} index={i} isVisible={isVisible} />
+        <div className="grid gap-8 md:grid-cols-3 md:gap-x-16 md:gap-y-12 lg:gap-x-24">
+          {painPoints.map((point, i) => (
+            <PainPointCard key={point.id} point={point} index={i} isVisible={isVisible} />
           ))}
         </div>
       </div>
@@ -53,26 +41,26 @@ export function ServicesSection() {
   )
 }
 
-function ServiceCard({
-  service,
+function PainPointCard({
+  point,
   index,
   isVisible,
 }: {
-  service: { title: string; description: string; direction: string }
+  point: { id: number; title: string; description: string; number?: string; stat?: string }
   index: number
   isVisible: boolean
 }) {
+  const directions = ["left", "right", "top"]
+
   const getRevealClass = () => {
     if (!isVisible) {
-      switch (service.direction) {
+      switch (directions[index]) {
         case "left":
           return "-translate-x-16 opacity-0"
         case "right":
           return "translate-x-16 opacity-0"
         case "top":
           return "-translate-y-16 opacity-0"
-        case "bottom":
-          return "translate-y-16 opacity-0"
         default:
           return "translate-y-12 opacity-0"
       }
@@ -88,11 +76,12 @@ function ServiceCard({
       }}
     >
       <div className="mb-3 flex items-center gap-3">
-        <div className="h-px w-8 bg-foreground/30 transition-all duration-300 group-hover:w-12 group-hover:bg-foreground/50" />
-        <span className="font-mono text-xs text-foreground/60">0{index + 1}</span>
+        <div className="h-px w-8 bg-foreground/30 transition-all duration-300 group-hover:w-12 group-hover:bg-[#c4ff00]" />
+        <span className="font-mono text-xs text-foreground/60">{point.number}</span>
       </div>
-      <h3 className="mb-2 font-sans text-2xl font-light text-foreground md:text-3xl">{service.title}</h3>
-      <p className="max-w-sm text-sm leading-relaxed text-foreground/80 md:text-base">{service.description}</p>
+      <h3 className="mb-2 font-sans text-2xl font-light text-foreground/95 md:text-3xl">{point.title}</h3>
+      <p className="max-w-sm text-sm leading-relaxed text-foreground/90 md:text-base font-normal">{point.description}</p>
+      {point.stat && <p className="text-xs text-[#c4ff00] mt-2 font-medium">{point.stat}</p>}
     </div>
   )
 }

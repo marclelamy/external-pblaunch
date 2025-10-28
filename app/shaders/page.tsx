@@ -2,10 +2,16 @@
 
 import { Shader, ChromaFlow, Swirl } from "shaders/react"
 import { GrainOverlay } from "./components/grain-overlay"
-import { WorkSection } from "./components/sections/work-section"
-import { ServicesSection } from "./components/sections/services-section"
-import { AboutSection } from "./components/sections/about-section"
-import { ContactSection } from "./components/sections/contact-section"
+import { HeroSection } from "./components/sections/about-section"
+import { SocialProofSection } from "./components/sections/social-proof-section"
+import { TestimonialsSection } from "./components/sections/testimonials-section"
+import { PainPointsSection } from "./components/sections/services-section"
+import { BenefitsSection } from "./components/sections/benefits-section"
+import { HowItWorksSection } from "./components/sections/how-it-works-section"
+import { FeaturesGridSection } from "./components/sections/features-grid-section"
+import { PricingSection } from "./components/sections/pricing-section"
+import { FAQSection } from "./components/sections/faq-section"
+import { FooterSection } from "./components/sections/footer-section"
 import { MagneticButton } from "./components/magnetic-button"
 import { useRef, useEffect, useState } from "react"
 
@@ -16,10 +22,10 @@ export default function Home() {
   const touchStartY = useRef(0)
   const touchStartX = useRef(0)
   const shaderContainerRef = useRef<HTMLDivElement>(null)
-  const scrollThrottleRef = useRef<number>()
+  const scrollThrottleRef = useRef<number | undefined>(undefined)
 
   useEffect(() => {
-    const checkShaderReady = () => {
+    const checkShaderReady = (): boolean => {
       if (shaderContainerRef.current) {
         const canvas = shaderContainerRef.current.querySelector("canvas")
         if (canvas && canvas.width > 0 && canvas.height > 0) {
@@ -77,8 +83,8 @@ export default function Home() {
       const deltaY = touchStartY.current - touchEndY
       const deltaX = touchStartX.current - touchEndX
 
-      if (Math.abs(deltaX) > Math.abs(deltaY) && Math.abs(deltaX) > 50) {
-        if (deltaX > 0 && currentSection < 4) {
+        if (Math.abs(deltaX) > Math.abs(deltaY) && Math.abs(deltaX) > 50) {
+        if (deltaX > 0 && currentSection < 9) {
           scrollToSection(currentSection + 1)
         } else if (deltaX < 0 && currentSection > 0) {
           scrollToSection(currentSection - 1)
@@ -118,7 +124,7 @@ export default function Home() {
         const scrollTop = scrollContainerRef.current.scrollTop
         const newSection = Math.round(scrollTop / sectionHeight)
 
-        if (newSection !== currentSection && newSection >= 0 && newSection <= 4) {
+        if (newSection !== currentSection && newSection >= 0 && newSection <= 9) {
           setCurrentSection(newSection)
         }
       }
@@ -150,7 +156,7 @@ export default function Home() {
         const scrollTop = scrollContainerRef.current.scrollTop
         const newSection = Math.round(scrollTop / sectionHeight)
 
-        if (newSection !== currentSection && newSection >= 0 && newSection <= 4) {
+        if (newSection !== currentSection && newSection >= 0 && newSection <= 9) {
           setCurrentSection(newSection)
         }
 
@@ -223,14 +229,14 @@ export default function Home() {
           onClick={() => scrollToSection(0)}
           className="flex items-center gap-2 transition-transform hover:scale-105"
         >
-          <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-foreground/15 backdrop-blur-md transition-all duration-300 hover:scale-110 hover:bg-foreground/25">
-            <span className="font-sans text-xl font-bold text-foreground">A</span>
+          <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-[#c4ff00] backdrop-blur-md transition-all duration-300 hover:scale-110 hover:bg-[#c4ff00]/90">
+            <span className="font-sans text-xl font-bold text-black">PBL</span>
           </div>
-          <span className="font-sans text-xl font-semibold tracking-tight text-foreground">Acme</span>
+          <span className="font-sans text-xl font-semibold tracking-tight text-foreground">Personal Brand Launch</span>
         </button>
 
         <div className="hidden items-center gap-8 md:flex">
-          {["Home", "Work", "Services", "About", "Contact"].map((item, index) => (
+          {["Hero", "Proof", "Results", "Pain", "Benefits", "Process", "Features", "Pricing", "FAQ", "Footer"].map((item, index) => (
             <button
               key={item}
               onClick={() => scrollToSection(index)}
@@ -248,8 +254,8 @@ export default function Home() {
           ))}
         </div>
 
-        <MagneticButton variant="secondary" onClick={() => scrollToSection(4)}>
-          Get Started
+        <MagneticButton variant="primary" onClick={() => scrollToSection(7)}>
+          Book a Call
         </MagneticButton>
       </nav>
 
@@ -261,53 +267,16 @@ export default function Home() {
         }`}
         style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
       >
-        {/* Hero Section */}
-        <section className="flex min-h-screen w-screen shrink-0 flex-col justify-end px-6 pb-16 pt-24 md:px-12 md:pb-24">
-          <div className="max-w-3xl">
-            <div className="mb-4 inline-block animate-in fade-in slide-in-from-bottom-4 rounded-full border border-foreground/20 bg-foreground/15 px-4 py-1.5 backdrop-blur-md duration-700">
-              <p className="font-mono text-xs text-foreground/90">WebGL Powered Design</p>
-            </div>
-            <h1 className="mb-6 animate-in fade-in slide-in-from-bottom-8 font-sans text-6xl font-light leading-[1.1] tracking-tight text-foreground duration-1000 md:text-7xl lg:text-8xl">
-              <span className="text-balance">
-                Creative experiences
-                <br />
-                in fluid motion
-              </span>
-            </h1>
-            <p className="mb-8 max-w-xl animate-in fade-in slide-in-from-bottom-4 text-lg leading-relaxed text-foreground/90 duration-1000 delay-200 md:text-xl">
-              <span className="text-pretty">
-                Transforming digital spaces with dynamic shader effects and real-time visual experiences that captivate
-                and inspire.
-              </span>
-            </p>
-            <div className="flex animate-in fade-in slide-in-from-bottom-4 flex-col gap-4 duration-1000 delay-300 sm:flex-row sm:items-center">
-              <MagneticButton
-                size="lg"
-                variant="primary"
-                onClick={() => window.open("https://v0.app/templates/R3n0gnvYFbO", "_blank")}
-              >
-                Open in v0
-              </MagneticButton>
-              <MagneticButton size="lg" variant="secondary" onClick={() => scrollToSection(2)}>
-                View Demo
-              </MagneticButton>
-            </div>
-          </div>
-
-          <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-in fade-in duration-1000 delay-500">
-            <div className="flex items-center gap-2">
-              <p className="font-mono text-xs text-foreground/80">Scroll to explore</p>
-              <div className="flex h-6 w-12 items-center justify-center rounded-full border border-foreground/20 bg-foreground/15 backdrop-blur-md">
-                <div className="h-2 w-2 animate-pulse rounded-full bg-foreground/80" />
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <WorkSection />
-        <ServicesSection />
-        <AboutSection scrollToSection={scrollToSection} />
-        <ContactSection />
+        <HeroSection scrollToSection={scrollToSection} />
+        <SocialProofSection />
+        <TestimonialsSection />
+        <PainPointsSection />
+        <BenefitsSection />
+        <HowItWorksSection />
+        <FeaturesGridSection />
+        <PricingSection />
+        <FAQSection />
+        <FooterSection />
       </div>
 
       <style jsx global>{`
